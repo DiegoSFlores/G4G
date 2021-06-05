@@ -1,0 +1,89 @@
+body {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.footer {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(168, 168, 168);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner_nav {
+    text-align: right;
+    margin: 0px;
+    padding: 25px;
+}
+
+.contacto-imgs {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+
+.contacto-img {
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    margin: 10px 10px -10px 10px;
+}
+
+h6 {
+    font-family: 'Major Mono Display';
+    font-size: 15px;
+    margin: 15px;
+    color: black;
+}
+
+.nav-b {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    border: solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px black;
+    text-decoration: none;
+    color: black;
+    background-color: #4cbd66;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.bg1 {
+    background-image: url(data/fondo-faq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    font-family: 'Major Mono Display';
+    font-size: 50px;
+    margin: 100px 250px 0px 250px;
+    color: white;
+    text-align: center;
+    padding: 110px 0px 10px 0px;
+    background-color: black;
+}
+
+.pregunta {
+    font-family: 'Roboto Mono';
+    text-decoration: underline;
+    font-size: 30px;
+    padding: 35px 0px 0px 30px;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.respuesta {
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 80px 0 80px;
+    margin-top: 25px;
+}
