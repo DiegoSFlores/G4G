@@ -1,6 +1,18 @@
 body {
     font-weight: bold;
     margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
 }
 
 .footer {
@@ -55,8 +67,11 @@ h6 {
     padding: 5px 10px;
 }
 
+
+/*--------------------------------------*/
+
 .bg1 {
-    background-image: url(data/fondo-faq.jpg);
+    background-image: url(data/celu.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -79,13 +94,13 @@ h6 {
     margin-top: 120px;
 }
 
-a {
+.link-form {
     text-decoration: none;
     color: greenyellow;
     font-size: 30px;
 }
 
-a:hover {
+.link-form:hover {
     color: black;
     background-color: yellow;
 }
@@ -95,8 +110,163 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px 0px 0px 220px;
+    margin: auto;
     padding: 40px 0px 40px 0px;
     height: 100px;
-    width: 940px;
+    width: 100%;
+}
+
+
+/*-------------------- otras resoluciones 1400 -----------------*/
+
+@media screen and (max-width: 1876px) {
+    .footer {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(168, 168, 168);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner_nav {
+        text-align: center;
+        padding: 25px;
+    }
+    .contacto-imgs {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 400px;
+    }
+}
+
+
+/*-------------------- otras resoluciones  -----------------*/
+
+@media screen and (max-width: 1200px) {
+    .nav-b {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 27px;
+        border: solid #000000;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px black;
+        text-decoration: none;
+        color: black;
+        background-color: #4cbd66;
+        margin: 10px;
+        padding: 5px 10px;
+    }
+    .link-google {
+        width: 450px;
+        height: 2000px;
+    }
+}
+
+
+/*-------------------- otras resoluciones 720 -----------------*/
+
+@media screen and (max-width: 1027px) {
+    .link-google {
+        width: 450px;
+        height: 1200px;
+    }
+    .contacto-imgs {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 0px;
+    }
+    .titulo {
+        font-family: 'Major Mono Display';
+        font-size: 50px;
+        margin: 100px 100px 0px 100px;
+        color: white;
+        text-align: center;
+        padding: 110px 0px 10px 0px;
+        background-color: black;
+    }
+    .nav-b {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 19px;
+        border: solid #000000;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px black;
+        text-decoration: none;
+        color: black;
+        background-color: #4cbd66;
+        margin: 5px;
+        padding: 5px 5px;
+    }
+}
+
+
+/*-------------------- otras resoluciones 650 -----------------*/
+
+@media screen and (max-width: 718px) {
+    .link-google {
+        width: 250px;
+        height: 2000px;
+    }
+    .link-form {
+        text-decoration: none;
+        color: greenyellow;
+        font-size: 10px;
+    }
+    .contacto-img {
+        height: 20px;
+        width: 20px;
+        margin: 10px 10px -10px 10px;
+    }
+    h6 {
+        font-family: 'Major Mono Display';
+        font-size: 8px;
+        color: black;
+        margin: 10px 0px;
+    }
+    .footer {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(168, 168, 168);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner_nav {
+        padding: 5px;
+        margin: 5px;
+    }
+    .nav-b {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 8px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px black;
+        text-decoration: none;
+        color: black;
+        background-color: #4cbd66;
+        margin: 1px;
+        padding: 3px 1px;
+    }
+    .contacto-imgs {
+        display: flex;
+        margin: 0px 0px;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .titulo {
+        font-family: 'Major Mono Display';
+        font-size: 20px;
+        margin: 90px 30px 0px 30px;
+        color: white;
+        text-align: center;
+        padding: 15px 0px 10px 0px;
+        background-color: black;
+    }
+    .respuesta {
+        font-family: 'Roboto Mono';
+        font-size: 10px;
+        text-align: justify;
+        padding: 0 20px 10px 20px;
+        margin-top: 20px;
+    }
 }
