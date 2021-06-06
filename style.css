@@ -2,6 +2,17 @@ body {
     font-weight: bold;
     margin: 0px;
     padding: 0px;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
 }
 
 
@@ -28,6 +39,9 @@ a {
     background-repeat: no-repeat;
     padding: 150px 0;
     text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 
 .banner h1 {
@@ -71,11 +85,14 @@ a {
 /*CUERPO + NAV MENU*/
 
 .img-de-fondo {
-    background-image: url(data/body/cod/a.jpg);
+    background-image: url(data/body/e.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    margin: auto;
+    height: 100%;
+    width: 100%;
 }
 
 .img-de-fondo:before {
@@ -179,6 +196,9 @@ h3 {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    height: 100%;
+    margin: auto;
+    width: 100%;
 }
 
 .img-de-fondo-2:before {
@@ -212,7 +232,7 @@ h4 {
 }
 
 .img-func {
-    margin: -120px 0 360px 0;
+    margin: -70px 0 360px 0;
     width: 140px;
     height: 140px;
     background-color: white;
@@ -261,6 +281,9 @@ h4 {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    height: 100%;
+    margin: auto;
+    width: 100%;
 }
 
 .img-de-fondo-3:before {
@@ -294,7 +317,7 @@ h5 {
 }
 
 .img-brin {
-    margin: -190px 0 430px 0;
+    margin: -130px 0 430px 0;
     width: 130px;
     height: 130px;
     background-color: white;
@@ -377,4 +400,883 @@ h6 {
     font-size: 20px;
     margin: 0px;
     color: white;
+}
+
+
+/*-------------------------- responsive designe--------*/
+
+
+/*-------------------- otras resoluciones 1400 -----------------*/
+
+@media screen and (max-width: 1700px) {
+    #servicios {
+        display: flex;
+        position: relative;
+        padding: 0 0 50px 0px;
+        justify-content: center;
+    }
+    .servicio-border {
+        box-shadow: 3px 3px 6px black;
+        border: 3px solid black;
+        background-color: #989997;
+        padding: 25px 0px;
+        width: 20%;
+        margin: 0 10px 0 10px;
+    }
+    .banner_nav {
+        text-align: center;
+        margin: 0px;
+        padding: 50px;
+        position: relative;
+    }
+    .servicio-titulo {
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Major Mono Display';
+    }
+    .servicio-texto {
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 35px 10px 30px 10px;
+    }
+    .servicio-btn {
+        text-align: center;
+        border: 3px solid black;
+        background-color: rgb(76 189 102);
+        font-family: 'Major Mono Display';
+        font-size: 25px;
+        margin: 0px 70px;
+        padding: 5px;
+    }
+    /************************************************/
+    .img-func {
+        margin: -40px 0px 320px 0;
+        width: 110px;
+        height: 110px;
+        background-color: white;
+        border: 5px solid #475a8a;
+        border-radius: 20%;
+        padding: 10px;
+    }
+    .func-img {
+        display: flex;
+        margin: 0px 235px 0px 220px;
+        position: relative;
+        justify-content: space-between;
+    }
+    .func-titulo {
+        font-family: 'Major Mono Display';
+        font-size: 25px;
+        text-align: center;
+        padding: 65px 0 0 0;
+    }
+    .func-texto {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        padding: 15px 10px 0px 10px;
+    }
+    .func-cont {
+        display: flex;
+        margin: 0px 140px 0 140px;
+        position: relative;
+        justify-content: space-between;
+    }
+    h4 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: white;
+        margin: 0 0 120px 0px;
+        padding: 40px;
+        position: relative;
+    }
+    /*---------------------------------------------*/
+    h5 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: white;
+        margin: 0 0 120px 0px;
+        padding: 50px;
+        position: relative;
+    }
+    .brin-titulo {
+        font-family: 'Major Mono Display';
+        font-size: 20px;
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+    .img-brin {
+        margin: -105px 0 380px 0;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border: 5px solid #7a9296;
+        border-radius: 20%;
+        padding: 10px;
+    }
+    .brin-border-texto {
+        box-shadow: 3px 3px 6px black;
+        border: 2px solid black;
+        background-color: #bebdae;
+        width: 300px;
+        height: 280px;
+        margin: 10px 10px -230px 10px;
+        padding: 0 0 20px 0px;
+    }
+    .brin-texto {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 17px;
+        text-align: justify;
+        padding: 10px 10px 0px 10px;
+    }
+    .brin-cont {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 20px 0 20px;
+        position: relative;
+    }
+    .brin-img {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 20px 0px 20px;
+        position: relative;
+    }
+    /*********************footer************************/
+    p {
+        font-family: 'Major Mono Display';
+        font-size: 50px;
+        margin: 0;
+        padding: 10px;
+        color: white;
+    }
+    .contacto-imgs {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 200px;
+    }
+    .contacto-img {
+        height: 70px;
+        width: 70px;
+    }
+    #footer {
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-size: 50px;
+        height: 200px;
+    }
+}
+
+
+/*-------------------- otras resoluciones  -----------------*/
+
+@media screen and (max-width: 1400px) {
+    #servicios {
+        display: flex;
+        position: relative;
+        padding: 0 0 40px 0px;
+        justify-content: center;
+        margin: 0px;
+    }
+    .servicio-border {
+        box-shadow: 3px 3px 6px black;
+        border: 3px solid black;
+        background-color: #989997;
+        padding: 25px 0px;
+        width: 20%;
+        margin: 0 10px 0 10px;
+    }
+    .banner_nav {
+        text-align: center;
+        margin: 0px;
+        padding: 50px;
+        position: relative;
+    }
+    .servicio-titulo {
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Major Mono Display';
+    }
+    .servicio-texto {
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 35px 10px 30px 10px;
+    }
+    .servicio-btn {
+        text-align: center;
+        border: 3px solid black;
+        background-color: rgb(76 189 102);
+        font-family: 'Major Mono Display';
+        font-size: 15px;
+        margin: 0px 70px;
+        padding: 5px;
+    }
+    /************************************************/
+    .img-func {
+        margin: -40px 0px 320px 0;
+        width: 110px;
+        height: 110px;
+        background-color: white;
+        border: 5px solid #475a8a;
+        border-radius: 20%;
+        padding: 10px;
+    }
+    .func-border-texto {
+        box-shadow: 3px 3px 6px black;
+        border: 5px solid black;
+        background-color: #b2b17c;
+        width: 300px;
+        height: 220px;
+        margin: 10px 0 -290px 0px;
+    }
+    .func-img {
+        display: flex;
+        margin: 0px 220px 0px 220px;
+        position: relative;
+        justify-content: space-between;
+    }
+    .func-titulo {
+        font-family: 'Major Mono Display';
+        font-size: 25px;
+        text-align: center;
+        padding: 65px 0 0 0;
+    }
+    .func-texto {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        padding: 15px 10px 0px 10px;
+    }
+    .func-cont {
+        display: flex;
+        margin: 0px 140px 0 140px;
+        position: relative;
+        justify-content: center;
+    }
+    h4 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: white;
+        margin: 0 0 70px 0px;
+        padding: 40px;
+        position: relative;
+    }
+    /*---------------------------------------------*/
+    h5 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: white;
+        margin: 0 0 120px 0px;
+        padding: 50px;
+        position: relative;
+    }
+    .brin-titulo {
+        font-family: 'Major Mono Display';
+        font-size: 20px;
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+    .img-brin {
+        margin: -105px 0 380px 0;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border: 5px solid #7a9296;
+        border-radius: 20%;
+        padding: 10px;
+    }
+    .brin-border-texto {
+        box-shadow: 3px 3px 6px black;
+        border: 2px solid black;
+        background-color: #bebdae;
+        width: 300px;
+        height: 280px;
+        margin: 10px 10px -230px 10px;
+        padding: 0 0 20px 0px;
+    }
+    .brin-texto {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 17px;
+        text-align: justify;
+        padding: 10px 10px 0px 10px;
+    }
+    .brin-cont {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 20px 0 20px;
+        position: relative;
+    }
+    .brin-img {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 20px 0px 20px;
+        position: relative;
+    }
+    /*********************footer************************/
+    p {
+        font-family: 'Major Mono Display';
+        font-size: 50px;
+        margin: 0;
+        padding: 10px;
+        color: white;
+    }
+    .contacto-imgs {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 200px;
+    }
+    .contacto-img {
+        height: 70px;
+        width: 70px;
+    }
+    #footer {
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-size: 50px;
+        height: 200px;
+    }
+}
+
+
+/*-------------------- otras resoluciones 720 -----------------*/
+
+@media screen and (max-width: 1150px) {
+    .banner {
+        background-image: url(data/body/a.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px 0;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    .banner h1 {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 40px;
+        letter-spacing: 18px;
+        text-shadow: 6px 4px 4px black;
+        color: white;
+        margin: 20px;
+        padding: 20px;
+    }
+    .banner h2 {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 25px;
+        letter-spacing: 2px;
+        text-shadow: 5px 3px 4px black;
+        color: white;
+        padding: 20px;
+    }
+    .btn1 {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 25px;
+        padding: 5px 10px;
+        color: black;
+        background-color: #F0D233;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px black;
+        display: inline-block;
+    }
+    #servicios {
+        display: flex;
+        position: relative;
+        padding: 0 0 50px 0px;
+        justify-content: center;
+    }
+    .banner_nav {
+        text-align: center;
+        margin: 0px;
+        padding: 20px 0px 20px 0;
+        position: relative;
+    }
+    .nav-b {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 15px;
+        border: solid #000000;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px black;
+        text-decoration: none;
+        color: black;
+        background-color: #4cbd66;
+        margin: 5px;
+        padding: 5px 0px;
+    }
+    h3 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: white;
+        margin: 0;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .servicio-border {
+        box-shadow: 3px 3px 6px black;
+        border: 3px solid black;
+        background-color: #989997;
+        width: 20%;
+        margin: 0 10px 0 10px;
+        padding: 0px 0 10px 0px;
+    }
+    .banner_nav {
+        text-align: center;
+        margin: 0px;
+        padding: 50px;
+        position: relative;
+    }
+    .servicio-titulo {
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Major Mono Display';
+    }
+    .servicio-texto {
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 15px 5px 15px 5px;
+    }
+    .servicio-btn {
+        text-align: center;
+        border: 1px solid black;
+        background-color: rgb(76 189 102);
+        font-family: 'Major Mono Display';
+        font-size: 13px;
+        margin: 0px 25px;
+        padding: 5px;
+    }
+    /************************************************/
+    .func-border-texto {
+        box-shadow: 3px 3px 6px black;
+        border: 2px solid black;
+        background-color: #b2b17c;
+        width: 300px;
+        height: 180px;
+        margin: 10px 10px -220px 10px;
+    }
+    .img-func {
+        margin: -5px 0px 205px 0;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 3px solid #475a8a;
+        border-radius: 20%;
+        padding: 10px;
+    }
+    .func-img {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin: 0px 65px;
+    }
+    .func-titulo {
+        font-family: 'Major Mono Display';
+        font-size: 15px;
+        text-align: center;
+        padding: 40px 0 0 0;
+    }
+    .func-texto {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding: 5px 5px 0px 5px;
+    }
+    .func-cont {
+        display: flex;
+        margin: 0px;
+        position: relative;
+        justify-content: center;
+    }
+    h4 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: white;
+        margin: 0px;
+        padding: 40px;
+        position: relative;
+    }
+    /*---------------------------------------------*/
+    h5 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: white;
+        margin: 0 0 30px 0px;
+        padding: 30px;
+        position: relative;
+    }
+    .brin-titulo {
+        font-family: 'Major Mono Display';
+        font-size: 13px;
+        text-align: center;
+        padding: 30px 0px 0px 0px;
+    }
+    .img-brin {
+        margin: -25px 0 250px 0;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 3px solid #7a9296;
+        border-radius: 20%;
+        padding: 3px;
+    }
+    .brin-border-texto {
+        box-shadow: 3px 3px 6px black;
+        border: 2px solid black;
+        background-color: #bebdae;
+        height: 230px;
+        margin: 0px 5px -230px 5px;
+        padding: 0 0 20px 0px;
+    }
+    .brin-texto {
+        font-family: ''Roboto Condensed', sans-serif';
+        font-size: 12px;
+        text-align: justify;
+        padding: 30px 5px 0 5px;
+    }
+    .brin-cont {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 20px 0 20px;
+        position: relative;
+    }
+    .brin-img {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 20px 0px 20px;
+        position: relative;
+    }
+    /*********************footer************************/
+    p {
+        font-family: 'Major Mono Display';
+        font-size: 30px;
+        margin: 0;
+        padding: 10px;
+        color: white;
+    }
+    .contacto-imgs {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+    }
+    .contacto-img {
+        height: 50px;
+        width: 50px;
+    }
+    #footer {
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-size: 50px;
+        height: 150px;
+    }
+    h6 {
+        font-family: 'Major Mono Display';
+        font-size: 15px;
+        margin: 0px;
+        color: white;
+    }
+}
+
+
+/*-------------------- otras resoluciones 650 -----------------*/
+
+@media screen and (max-width: 700px) {
+    .img-de-fondo-2 {
+        background-image: url(data/body/b.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        height: 600px;
+        margin: auto;
+        width: 100%;
+    }
+    .banner h1 {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 30px;
+        letter-spacing: 10px;
+        text-shadow: 6px 4px 4px black;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+    .banner h2 {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 14px;
+        letter-spacing: 0px;
+        text-shadow: 5px 3px 4px black;
+        color: white;
+        padding: 10px;
+    }
+    .btn1 {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 13px;
+        padding: 5px 10px;
+        color: black;
+        background-color: #F0D233;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px black;
+        display: inline-block;
+    }
+    #servicios {
+        display: flex;
+        position: relative;
+        padding: 0 0 50px 0px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicio-border {
+        box-shadow: 3px 3px 6px black;
+        border: 3px solid black;
+        background-color: #989997;
+        width: 95%;
+        margin: 0 10px 0 10px;
+    }
+    .banner_nav {
+        text-align: center;
+        margin: 0px;
+        padding: 5px;
+        position: relative;
+    }
+    .nav-b {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 7px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px black;
+        text-decoration: none;
+        color: black;
+        background-color: #4cbd66;
+        margin: 3px;
+        padding: 2px 3px;
+    }
+    .servicio-titulo {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Major Mono Display';
+    }
+    .servicio-texto {
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 5px 5px 30px 5px;
+    }
+    .servicio-btn {
+        text-align: center;
+        border: 2px solid black;
+        background-color: rgb(76 189 102);
+        font-family: 'Major Mono Display';
+        font-size: 14px;
+        margin: 0px 100px;
+        padding: 5px;
+    }
+    h3 {
+        text-align: center;
+        text-shadow: 2px 1px 2px black;
+        font-family: 'Major Mono Display';
+        font-size: 19px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: white;
+        margin: 0;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    /************************************************/
+    .func-border-texto {
+        box-shadow: 3px 3px 6px black;
+        border: 2px solid black;
+        background-color: #b2b17c;
+        width: 300px;
+        height: 100px;
+        margin: -10px 10px -450px 10px;
+    }
+    .img-func {
+        margin: 135px 0px -94px 0px;
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        border: 3px solid #475a8a;
+        border-radius: 20%;
+        padding: 3px;
+    }
+    .func-img {
+        display: flex;
+        margin: -420px 0px 0px 5px;
+        position: relative;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .func-titulo {
+        font-family: 'Major Mono Display';
+        font-size: 15px;
+        text-align: center;
+        padding: 5px;
+    }
+    .func-texto {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding: 5px 10px 0px 70px;
+    }
+    .func-cont {
+        display: flex;
+        margin: auto;
+        position: relative;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px 0 300px 0;
+    }
+    h4 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 20px;
+        color: white;
+        margin: 0 0 20px 0px;
+        padding: 15px;
+        position: relative;
+    }
+    /*---------------------------------------------*/
+    .img-de-fondo-3 {
+        background-image: url(data/banner2/gow.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        height: 820px;
+        margin: auto;
+        width: 100%;
+    }
+    h5 {
+        text-align: center;
+        text-shadow: 3px 3px 0px black;
+        font-family: 'Major Mono Display';
+        font-size: 15px;
+        color: white;
+        margin: 0px;
+        padding: 15px;
+        position: relative;
+    }
+    .brin-titulo {
+        font-family: 'Major Mono Display';
+        font-size: 20px;
+        text-align: center;
+        padding: 5px 0 0 0;
+    }
+    .img-brin {
+        margin: 40px 0px;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border: 2px solid #7a9296;
+        border-radius: 20%;
+        padding: 6px;
+    }
+    .brin-border-texto {
+        box-shadow: 3px 3px 6px black;
+        border: 2px solid black;
+        background-color: #bebdae;
+        width: 250px;
+        height: 150px;
+        margin: 0px;
+    }
+    .brin-texto {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 15px;
+        text-align: justify;
+        padding: 10px 5px 0px 35px;
+    }
+    .brin-cont {
+        display: flex;
+        margin: 0px 35px;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .brin-img {
+        display: flex;
+        justify-content: space-around;
+        margin: -730px 0px 0px 5px;
+        position: relative;
+        flex-direction: column;
+    }
+    /*********************footer************************/
+    p {
+        font-family: 'Major Mono Display';
+        font-size: 35px;
+        margin: 0;
+        padding: 5px;
+        color: white;
+    }
+    .contacto-imgs {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        flex-direction: column;
+    }
+    .contacto-img {
+        height: 30px;
+        width: 30px;
+    }
+    #footer {
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-size: 50px;
+        height: 500px;
+    }
+    h6 {
+        font-family: 'Major Mono Display';
+        font-size: 10px;
+        margin: 0px;
+        color: white;
+    }
+    .cont-cont {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+    }
 }
