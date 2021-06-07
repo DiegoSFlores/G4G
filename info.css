@@ -4,6 +4,12 @@ body {
     padding: 0px;
     min-height: 100%;
 }
+.trolled {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
 
 * {
     box-sizing: border-box;
