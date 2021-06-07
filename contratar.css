@@ -67,11 +67,8 @@ h6 {
     padding: 5px 10px;
 }
 
-
-/*--------------------------------------*/
-
 .bg1 {
-    background-image: url(data/celu.jpg);
+    background-image: url(data/fondo_general/bgxl.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -86,35 +83,25 @@ h6 {
     background-color: black;
 }
 
+.pregunta {
+    font-family: 'Roboto Mono';
+    text-decoration: underline;
+    font-size: 30px;
+    padding: 35px 0px 0px 30px;
+    margin-top: 60px;
+    text-align: left;
+}
+
 .respuesta {
     font-family: 'Roboto Mono';
-    font-size: 25px;
+    font-size: 20px;
     text-align: justify;
-    padding: 0 80px 10px 80px;
-    margin-top: 120px;
+    padding: 0 80px 0 80px;
+    margin-top: 25px;
 }
 
-.link-form {
-    text-decoration: none;
-    color: greenyellow;
-    font-size: 30px;
-}
 
-.link-form:hover {
-    color: black;
-    background-color: yellow;
-}
-
-.img-form {
-    background-image: url(data/contratar/d.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    padding: 40px 0px 40px 0px;
-    height: 100px;
-    width: 100%;
-}
+/*------------------------- responsive design----------------*/
 
 
 /*-------------------- otras resoluciones 1400 -----------------*/
@@ -156,20 +143,12 @@ h6 {
         margin: 10px;
         padding: 5px 10px;
     }
-    .link-google {
-        width: 450px;
-        height: 2000px;
-    }
 }
 
 
 /*-------------------- otras resoluciones 720 -----------------*/
 
 @media screen and (max-width: 1027px) {
-    .link-google {
-        width: 450px;
-        height: 1200px;
-    }
     .contacto-imgs {
         display: flex;
         justify-content: space-around;
@@ -202,15 +181,6 @@ h6 {
 /*-------------------- otras resoluciones 650 -----------------*/
 
 @media screen and (max-width: 718px) {
-    .link-google {
-        width: 250px;
-        height: 2000px;
-    }
-    .link-form {
-        text-decoration: none;
-        color: greenyellow;
-        font-size: 10px;
-    }
     .contacto-img {
         height: 20px;
         width: 20px;
@@ -255,12 +225,20 @@ h6 {
     }
     .titulo {
         font-family: 'Major Mono Display';
-        font-size: 20px;
+        font-size: 25px;
         margin: 90px 30px 0px 30px;
         color: white;
         text-align: center;
         padding: 15px 0px 10px 0px;
         background-color: black;
+    }
+    .pregunta {
+        font-family: 'Roboto Mono';
+        text-decoration: underline;
+        font-size: 15px;
+        padding: 35px 0px 0px 30px;
+        margin-top: 60px;
+        text-align: left;
     }
     .respuesta {
         font-family: 'Roboto Mono';
