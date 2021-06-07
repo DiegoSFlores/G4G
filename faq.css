@@ -11,14 +11,6 @@ body {
     padding: 0;
 }
 
-.trolled {
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
-}
-
-
 html {
     height: 100%;
 }

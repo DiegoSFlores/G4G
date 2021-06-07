@@ -15,13 +15,6 @@ html {
     height: 100%;
 }
 
-.trolled {
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
-}
-
 .header {
     position: fixed;
     margin: 0;
@@ -206,7 +199,7 @@ h6 {
 /*-------------------- otras resoluciones 1400 -----------------*/
 
 @media screen and (max-width: 1876px) {
-    .footer {
+    .header {
         position: fixed;
         top: 0;
         width: 100%;
@@ -219,10 +212,12 @@ h6 {
         text-align: center;
         padding: 25px;
     }
-    .contacto-imgs {
-        display: flex;
-        justify-content: space-around;
-        margin: 0px 400px;
+    .titulo {
+        margin: 180px;
+    }
+    .img2 {
+        height: 180px;
+        width: 270px;
     }
 }
 
@@ -242,16 +237,26 @@ h6 {
         margin: 10px;
         padding: 5px 10px;
     }
+    .img2 {
+        margin: 0px;
+        padding: 0px;
+        width: 210px;
+        height: 150px;
+    }
 }
 
 
 /*-------------------- otras resoluciones 720 -----------------*/
 
 @media screen and (max-width: 1027px) {
-    .contacto-imgs {
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(168, 168, 168);
+        text-align: center;
         display: flex;
-        justify-content: space-around;
-        margin: 0px 0px;
+        flex-direction: column;
     }
     .titulo {
         font-family: 'Major Mono Display';
@@ -274,31 +279,79 @@ h6 {
         margin: 5px;
         padding: 5px 5px;
     }
+    .img2 {
+        margin: 0px;
+        padding: 0px;
+        width: 150px;
+        height: 100px;
+    }
+    #coach {
+        font-size: 40px;
+    }
+    #boost {
+        font-size: 40px;
+    }
+    #mis {
+        font-size: 40px;
+    }
+    #compl {
+        font-size: 40px;
+    }
+    .li {
+        font-size: 15px;
+    }
+    .img-c {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+    }
+    .img-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+    }
+    .pro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+    }
+    .sub-img-text {
+        padding-right: 40px;
+    }
 }
 
 
 /*-------------------- otras resoluciones 650 -----------------*/
 
 @media screen and (max-width: 718px) {
-    .contacto-img {
-        height: 20px;
-        width: 20px;
-        margin: 10px 10px -10px 10px;
-    }
     h6 {
         font-family: 'Major Mono Display';
         font-size: 8px;
         color: black;
         margin: 10px 0px;
     }
-    .footer {
+    .sub-list {
+        margin: 0px;
+        padding: 15px;
+    }
+    .header {
         position: fixed;
-        top: 0;
         width: 100%;
         background-color: rgb(168, 168, 168);
         text-align: center;
         display: flex;
         flex-direction: column;
+    }
+    .contacto-img {
+        height: 20px;
+        width: 20px;
+        margin: 10px 10px -10px 10px;
     }
     .banner_nav {
         padding: 5px;
@@ -330,5 +383,17 @@ h6 {
         text-align: center;
         padding: 15px 0px 10px 0px;
         background-color: black;
+    }
+    .img {
+        width: 90px;
+        height: 90px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .img2 {
+        width: 110px;
+        height: 60px;
+        margin: 0px;
+        padding: 0px;
     }
 }
