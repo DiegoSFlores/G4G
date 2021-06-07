@@ -4,12 +4,6 @@ body {
     padding: 0px;
     min-height: 100%;
 }
-.trolled {
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
-}
 
 * {
     box-sizing: border-box;
@@ -21,7 +15,14 @@ html {
     height: 100%;
 }
 
-.footer {
+.trolled {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+.header {
     position: fixed;
     margin: 0;
     top: 0;
