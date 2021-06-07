@@ -1,0 +1,35 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        font-size: 20px;
+        min-height: 100%;
+    }
+    
+    @media (min-width: 720px) {
+        .grid-cont {
+            background-color: black;
+            grid-template: "social nav   nav" 100px "title  title title" 50px "text   text  text" auto "form   form  form" 500px /150px auto auto;
+        }
+    }
+    
+    @media (min-width: 1080px) {
+        .grid-cont {
+            background-color: white;
+            grid-template: "social nav   nav" 100px "title  title title" 50px "text   text  text" 200px "form   form  form" auto /150px auto auto;
+        }
+    }
+    
+    @media (min-width: 1920px) {
+        .grid-cont {
+            background-color: yellow;
+            grid-template: "social nav   nav" 100px "title  title title" 100px "text   text  text" 200px "form   form  form" auto /600px auto auto;
+        }
+    }
