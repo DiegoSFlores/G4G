@@ -1,0 +1,74 @@
+body {
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*****************troll*******************/
+
+.easter-egg {
+    width: 200px;
+    height: 200px;
+}
+
+html {
+    height: 100%;
+    background-color: black;
+}
+
+.img {
+    background-color: wheat;
+    border: 5px solid red;
+    border-radius: 15px;
+    margin: 100px;
+    padding: 0px;
+}
+
+.title {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 50px;
+    padding: 50px;
+}
+
+.text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.troll {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    .img {
+        background-color: wheat;
+        border: 5px solid red;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 0px;
+    }
+    .title {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .text {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .troll {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 15px;
+    }
+}
